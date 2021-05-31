@@ -197,7 +197,7 @@ iminente e que a falha está se desenvolvendo, é imprescindível para um proces
 para um horário em que a máquina já estaria parada para outros fins, maximizando a produção, além do processo de manutenção ser mais rápido, 
 já que os elementos não se danificaram por completo ainda.
 
-Essa vibração possui uma característica específica, que depende de qual falha ela é oriunda, que acaba criando uma assinatura
+Essa vibração possui uma característica específica, que depende do tipo de falha, que acaba criando uma assinatura
 ao se analisar a vibração, sendo possível diagnosticar se o motor e o sistema em que ele está inserido está com boa saúde \cite{Wu2013}.
 O desalinhamento ocorre quando o motor e o sistema não estão perfeitamente alinhados, podendo ter dois tipos: paralelo e angular, os quais 
 podem ser vistos, respectivamente na parte (a) e (b) da figura \ref{fig:misadraw_analog_p2}.
@@ -210,8 +210,7 @@ podem ser vistos, respectivamente na parte (a) e (b) da figura \ref{fig:misadraw
   \label{fig:misadraw_analog_p2}
 \end{figure}
 
-Relembrando o que foi escrito anteriormente, é possível ver as assinaturas das falhas no espectro da vibração captada por um transdutor
-que está acoplado no sistema. Quando uma falha de desalinhamento está presente, há um aumento de até duas vezes nas harmônicas de alta 
+Quando uma falha de desalinhamento está presente, há um aumento de até duas vezes nas harmônicas de alta 
 frequência, como pode ser visto na Figura \ref{fig:misa_analog_p2} \cite{Sopcik2019}.
 
 \begin{figure}[H]
@@ -364,8 +363,8 @@ metodologia empregada neste trabalho.
 
 \section{Metodologia}
 
-O desenvolvimento do projeto, começa pela configuração do simulador de falhas MFS \textsuperscript \textregistered, ]
-da empresa SpectraQuest \textsuperscript \textregistered, até a implementação em campo. A metodologia do desenvolvimento se encontra na
+O desenvolvimento do projeto, começa pela configuração do simulador de falhas MFS\textsuperscript\textregistered,
+da empresa SpectraQuest\textsuperscript\textregistered, até a implementação em campo. A metodologia do desenvolvimento se encontra na
 Figura \ref{fig:metodologia}, onde as etapas estão descritas em forma de fluxo de trabalho.
 
 \begin{figure}[H]
@@ -385,7 +384,7 @@ MFS \textsuperscript \textregistered (\textit{Machinery Fault Simulator} - simul
     \begin{center}
         \includegraphics[scale=.25]{../metodologia/img/real_plant.jpeg}
     \end{center}
-    \caption{Estrutura do simulador MFS \textsuperscript \textregistered. Fonte: \cite{SpectraQuest2011}.}
+    \caption{Estrutura do simulador MFS\textsuperscript\textregistered. Fonte: \cite{SpectraQuest2011}.}
     \label{fig:real_plant}
 \end{figure}
 
@@ -393,10 +392,10 @@ O simulador é composto por um motor elétrico de indução trifásico de 1 HP, 
 acoplamento. Esse eixo possui dois discos dourados e furados, onde é possível se colocar cargas para criar um desbalanceamento no sistema.
 
 Progredindo no desenvolvimento, para a aquisição das grandezas físicas, as quais alimentam a aplicação de software, foi selecionado o sensor 
-de vibração e temperatura QM30VT2, da Banner Engineering, que possui as seguintes características:
+de vibração e temperatura QM30VT2\textsuperscript\textregistered, da Banner Engineering\textsuperscript\textregistered, que possui as seguintes características:
 
 \begin{table}[H]
-  \caption{Especificações do Sensor QM30VT2. Fonte: Elaborado pelo Autor.}
+  \caption{Especificações do Sensor QM30VT2\textsuperscript\textregistered. Fonte: Elaborado pelo Autor.}
   \label{tab:espec_sensor}
   \centering
   \begin{minipage}{.33\textwidth}
